@@ -1,0 +1,55 @@
+html{
+    scroll-behavior: smooth;
+}.logo {
+    width: 150px !important;
+    margin: 10 auto !important;
+    position: absolute;
+    z-index: 9999;
+    left: 45%;
+}
+
+/*.carousel makes problem with the contents below it*/
+/*.carousel {
+
+    top:0;  
+    width: 100%	;  
+    z-index: 90;
+}*/
+
+nav {
+    position: absolute;
+    z-index: 9999;
+    top: 30px;
+    opacity: 0.8;
+}
+
+.nav-right {
+
+    right: 10%;
+
+}
+
+.nav-left {
+
+    left: 10%;
+}
+
+.products {
+    margin: 0 auto;
+}
+
+.product1,
+.product2,
+.product3 {
+    height: 100px;
+    width: 33%;
+    max-resolution: 6px !important;
+}
+
+.carousel{
+    height: 100vh!important;
+}
+
+.carousel-item img{
+    height: 100vh;
+}
