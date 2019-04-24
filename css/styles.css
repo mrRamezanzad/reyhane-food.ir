@@ -1,11 +1,12 @@
-html{
-    scroll-behavior: smooth;
-}.logo {
-    width: 150px !important;
-    margin: 10 auto !important;
-    position: absolute;
-    z-index: 9999;
-    left: 45%;
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  width: 150px !important;
+  margin: 10 auto !important;
+  position: absolute;
+  z-index: 9999;
+  left: 45%;
 }
 
 /*.carousel makes problem with the contents below it*/
@@ -17,53 +18,47 @@ html{
 }*/
 
 nav {
-    position: absolute;
-    z-index: 9999;
-    top: 30px;
-    opacity: 0.8;
+  position: absolute;
+  z-index: 9999;
+  top: 30px;
+  opacity: 0.8;
 }
 
 .nav-right {
-
-    right: 10%;
-
+  right: 10%;
 }
 
 .nav-left {
-
-    left: 10%;
+  left: 10%;
 }
 
 .products {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .product1,
 .product2,
 .product3 {
-    height: 100px;
-    width: 33%;
-    max-resolution: 6px !important;
+  height: 100px;
+  width: 33%;
+  max-resolution: 6px !important;
 }
 
-.carousel{
-    height: 100vh!important;
+.carousel {
+  height: 100vh !important;
 }
 
-.carousel-item img{
-    height: 100vh;
+.carousel-item img {
+  height: 100vh;
 }
 
-#aboutUs > div > div > div > div.col-12 > blockquote > img{
-    width:15%;
-    
+#aboutUs > div > div > div > div.col-12 > blockquote > img {
+  width: 15%;
 }
-
-
 
 /*All media queries go here  */
-    @media all and (max-width:765px){
-        #aboutUs > div > div > div > div.col-12 > blockquote > img{
-            width:25%;
-        }
-    }
+@media all and (max-width: 765px) {
+  #aboutUs > div > div > div > div.col-12 > blockquote > img {
+    width: 25%;
+  }
+}
