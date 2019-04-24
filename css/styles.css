@@ -36,15 +36,16 @@ nav span ul li {
   right: 0;
 }
 a.nav-link.active.text-white:hover {
-  color: yellow !important;
+  transition: 500ms;
+  color:yellow !important;
 }
 
 .menu-bg {
-  background-color: rgba(40, 167, 69, 0.8);
+  background-color: rgba(40, 167, 69, 0.7);
   transition-duration: 200ms;
 }
 ul.menu-bg.rounded:hover {
-  background: rgba(40, 167, 69, 1);
+  background: rgba(40, 167, 69, .9);
 }
 /* 
 .logo {
