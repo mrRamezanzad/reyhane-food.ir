@@ -53,3 +53,17 @@ nav {
 .carousel-item img{
     height: 100vh;
 }
+
+#aboutUs > div > div > div > div.col-12 > blockquote > img{
+    width:15%;
+    
+}
+
+
+
+/*All media queries go here  */
+    @media all and (max-width:765px){
+        #aboutUs > div > div > div > div.col-12 > blockquote > img{
+            width:25%;
+        }
+    }
