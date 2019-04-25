@@ -91,7 +91,7 @@ ul.menu-bg.rounded:hover {
   height: 100vh;
 }
 
-#aboutUs > div > div > div > div.col-12 > blockquote > img {
+#aboutUs blockquote > img {
   width: 15%;
 }
 
