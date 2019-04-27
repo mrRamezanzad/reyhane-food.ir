@@ -37,7 +37,7 @@
             </ul>
         </span>
         <!-- Logo -->
-        <span class="col-md-2 col-sm-3 logo"><img src=" <?php echo get_theme_file_uri("sources/logo.png") ?>" alt="گروه صنعتی ریحانه "></span>
+        <span class="col-md-2 col-sm-3 logo"><img src=" <?php echo get_theme_file_uri("./sources/Logo.png") ?>" alt="گروه صنعتی ریحانه "></span>
         <!-- nav left -->
         <span class="nav-left col-md-5">
             <ul class=" nav flex-row-reverse menu-bg rounded">
