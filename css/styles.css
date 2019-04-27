@@ -1,6 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+ul{
+  list-style:none;
+}
+.fab{
+  font-size: 50px;
+}
 
 nav {
   top: 30px;
@@ -24,6 +30,7 @@ nav span ul li {
 }
 .nav-right ul {
   position: absolute;
+  left:0;
 }
 
 .nav-left {
@@ -42,6 +49,7 @@ a {
 a:hover {
   transition: 500ms;
   color: yellow !important;
+  text-decoration: none;
 }
 
 .menu-bg {
@@ -94,6 +102,25 @@ ul.menu-bg.rounded:hover {
 #aboutUs blockquote > img {
   width: 15%;
 }
+
+.footer-divider::before {
+    display: block;
+    margin: 0 0;
+    top: 70px;
+    width: 3px;
+    height: 200px;
+    opacity: .1;
+    border-right: 3px var(--success) solid;
+    content: "";
+    position: absolute;
+    right: 0;
+}
+
+.social-icon>i:hover{
+transition: all .2s ease;
+transform: scale(1.5) rotate(360deg)
+}
+
 
 /*All media queries go here  */
 
