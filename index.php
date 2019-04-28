@@ -306,7 +306,7 @@
             </div>
             <div class="col-12 p-2 pr-5">
                 <blockquote class="blockquote text-right">
-                    <img class="" src="<?php echo get_theme_file_uri("./sources/logo.png"); ?>" alt="">
+                    <img class="" src="<?php echo get_theme_file_uri("./sources/Logo.png"); ?>" alt="">
                     <footer class="blockquote-footer text-right">کلیه حقوق مادی و معنوی سایت محفوظ و متعلق
                         به گروه صنایع غذایی ریحانه می باشد. 1398 ©</footer>
                 </blockquote>
