@@ -1,0 +1,241 @@
+html {
+	scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   global                                   */
+/* -------------------------------------------------------------------------- */
+ul {
+	list-style: none;
+}
+
+.fab {
+	font-size: 50px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+
+	&:hover {
+		transition: 500ms;
+		color: yellow !important;
+		text-decoration: none;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 navigation                                 */
+/* -------------------------------------------------------------------------- */
+// nav {
+// 	top: 30px;
+// 	margin: 0 5rem;
+// 	font-size: 10%;
+
+// 	/* z-index: 9999; */
+
+// 	span ul {
+// 		margin-top: 2em;
+
+// 		li {
+// 			font-size: 0.98rem;
+// 		}
+// 	}
+// 	.nav-link {
+// 		padding: 0.5rem 0.55rem;
+// 	}
+
+// 	.nav-right {
+// 		position: absolute;
+// 		right: 0;
+
+// 		ul {
+// 			position: absolute;
+// 			left: 0;
+// 		}
+// 	}
+
+// 	.nav-left {
+// 		position: absolute;
+// 		left: 0;
+
+// 		ol {
+// 			position: absolute;
+// 			right: 0;
+// 		}
+// 	}
+// }
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	.nav-right {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		order: 3;
+	}
+	.nav-left {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+	.logo {
+		order: 2;
+	}
+	span {
+		margin-top: 30px;
+	}
+	ul {
+		width: auto;
+	}
+}
+
+ul.menu-bg {
+	background-color: rgba(40, 167, 69, 0.7);
+	transition-duration: 200ms;
+	.rounded:hover {
+		background: rgba(40, 167, 69, 0.9);
+	}
+}
+
+/* 
+  .logo {
+	width: 100% !important;
+	position: absolute;
+	margin: 0 auto !important;
+	padding: 0 10%;
+	top: 0;
+  } */
+
+/* ----------------------------------- Log ---------------------------------- */
+.logo {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+
+	/* z-index: 9999; */
+
+	img {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Page sections                               */
+/* -------------------------------------------------------------------------- */
+
+.products {
+	margin: 0 auto;
+}
+
+.product1,
+.product2,
+.product3 {
+	height: 100px;
+	width: 33%;
+	max-resolution: 6px !important;
+}
+
+/* -------------------------------- slideshow ------------------------------- */
+.carousel {
+	height: 100vh !important;
+}
+
+.carousel-item img {
+	height: 100vh;
+}
+
+/* --------------------------------- footer --------------------------------- */
+
+.footer {
+	.social-media {
+		align-content: center;
+	}
+	.social-icons {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		i {
+			margin-top: 20px;
+			margin-left: 5px;
+			font-size: 50px;
+		}
+	}
+	.blockquote {
+		margin-bottom: 0;
+		&-footer::before {
+			content: "";
+		}
+
+		& > img {
+			width: 15%;
+		}
+	}
+	&-divider {
+		&::before {
+			display: block;
+			content: "";
+			margin: 0 0;
+			top: 70px;
+			width: 3px;
+			height: 200px;
+			opacity: 0.1;
+			border-right: 3px var(--success) solid;
+			position: absolute;
+			right: 0;
+		}
+		.social-icon > i:hover {
+			transition: all 0.2s ease;
+			transform: scale(1.5) rotate(360deg);
+		}
+	}
+	.headline > p {
+		margin-bottom: 0;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          All media queries go here                         */
+/* -------------------------------------------------------------------------- */
+
+@media all and (max-width: 768px) {
+	nav {
+		display: flex;
+		flex-flow: column;
+		flex-wrap: wrap;
+		background: rgba(43, 41, 41, 0.7);
+		.logo {
+			order: 1;
+		}
+		.nav-right {
+			order: 2;
+		}
+		.nav-left {
+			order: 3;
+		}
+		.nav-right,
+		.nav-left {
+			ul {
+				background: none;
+				li {
+					display: block !important;
+				}
+			}
+		}
+	}
+	.social-media {
+		i {
+			font-size: 40px;
+			padding: 15px 5px !important ;
+		}
+	}
+	.footer .blockquote > img {
+		width: 25%;
+	}
+	span.logo {
+		width: 30%;
+	}
+}
