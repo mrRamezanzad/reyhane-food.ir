@@ -126,17 +126,40 @@ ul.menu-bg {
 /* -------------------------------------------------------------------------- */
 /*                                Page sections                               */
 /* -------------------------------------------------------------------------- */
+.products-section {
+	overflow: hidden;
+	.products {
+		display: flex;
+		flex: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		.product-item {
+			display: flex;
+			margin-left: 5px;
+			// border: 1px solid red;
 
-.products {
-	margin: 0 auto;
-}
-
-.product1,
-.product2,
-.product3 {
-	height: 100px;
-	width: 33%;
-	max-resolution: 6px !important;
+			img {
+				width: 200px;
+				height: auto;
+				border-radius: 50%;
+				border-color: lightgreen;
+				border-style: solid;
+				border-width: 5px;
+			}
+		}
+	}
+	.dots {
+		display: flex;
+		justify-content: center;
+		margin: 15px 0 10px;
+		.dot {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: rgb(56, 56, 56);
+			margin-left: 20px;
+		}
+	}
 }
 
 /* -------------------------------- slideshow ------------------------------- */
